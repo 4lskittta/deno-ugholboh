@@ -23,7 +23,7 @@
  
          // previousWordの末尾とnextWordの先頭が同一か確認
          if (previousWord.slice(-1) === nextWord.slice(0, 1)) {
-            if(nextWord.slice(-1)==="Ь" || nextWord.slice(-1) === "ъ") {
+            if(nextWord.slice(-1)==="ь" || nextWord.slice(-1) === "ъ") {
                 return new Response(
                     JSON.stringify({
                         "errorMessage2":"тоглоом дууслаа",
